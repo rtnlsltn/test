@@ -39,26 +39,22 @@ const About = () => {
   return (
     <>
       <motion.div variants={textVariant()}>
-        <p className={styles.sectionSubText}>Introduction</p>
-        <h2 className={styles.sectionHeadText}>Overview.</h2>
+        <p className={styles.sectionSubText}>About Us</p>
+        <h2 className={styles.sectionHeadText}>What's with the jar?</h2>
       </motion.div>
 
       <motion.p
         variants={fadeIn("", "", 0.1, 1)}
-        className='mt-4 text-secondary text-[17px] max-w-3xl leading-[30px]'
+        className='mt-4 text-secondary xl:text-[17px] l:text-[17px] xl:text-[17px] text-[17px] sm:text-[16px] xs:text-[14px] max-w-4xl leading-[30px]'
       >
-        I'm a skilled software developer with experience in TypeScript and
-        JavaScript, and expertise in frameworks like React, Node.js, and
-        Three.js. I'm a quick learner and collaborate closely with clients to
-        create efficient, scalable, and user-friendly solutions that solve
-        real-world problems. Let's work together to bring your ideas to life!
+       Welcome to Gravity Jar, where we defy the laws of web/app/software development… and
+       physics! Founded with a passion for technology, creativity, and ingenuity, Gravity
+       Jar operates out of two locations—<b>Green Bay, WI</b>, and <b>St. Petersburg, FL</b>. However,
+       we’re happy to meet you online or anywhere in between (the singularity is confusing).
+       Our <b>100% USA-based team</b> has a wide range of experience to accomplish any project
+       you have in mind, no matter the size.
       </motion.p>
 
-      <div className='mt-20 flex flex-wrap gap-10'>
-        {services.map((service, index) => (
-          <ServiceCard key={service.title} index={index} {...service} />
-        ))}
-      </div>
     </>
   );
 };

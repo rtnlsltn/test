@@ -1,4 +1,5 @@
 @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Chaga:wght@100;200;300;400;500;600;700;800;900&display=swap");
 
 @tailwind base;
 @tailwind components;
@@ -13,6 +14,9 @@
   color-scheme: dark;
 }
 
+.nav {
+   transition: all .5s ease-in-out;
+}
 .hash-span {
   margin-top: -100px;
   padding-bottom: 100px;
@@ -33,6 +37,12 @@
   ); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
 }
 
+.services-gradient {
+  background: "#00cea8";
+  background: linear-gradient(90.13deg, rgb(5, 8, 22, 0.0) 1.9%, rgb(5, 8, 22, 0.5) 97.5%);
+  background: -webkit-linear-gradient(-90.13deg, rgb(149, 0, 171, 0.0) 1.9%, rgb(5, 8, 22, 0.5) 97.5%);
+}
+
 .violet-gradient {
   background: #804dee;
   background: linear-gradient(-90deg, #804dee 0%, rgba(60, 51, 80, 0) 100%);
@@ -47,6 +57,18 @@
   background: "#00cea8";
   background: linear-gradient(90.13deg, #00cea8 1.9%, #bf61ff 97.5%);
   background: -webkit-linear-gradient(-90.13deg, #00cea8 1.9%, #bf61ff 97.5%);
+}
+
+.blue-purple-gradient {
+  background: "#00cea8";
+  background: linear-gradient(90.13deg, #9500ab 1.9%, #0000b8 97.5%);
+  background: -webkit-linear-gradient(-90.13deg, #9500ab 1.9%, #0000b8 97.5%);
+}
+
+.blue-purple-gradient-opaque {
+  background: "#00cea8";
+  background: linear-gradient(90.13deg, rgb(149, 0, 171, 0.5) 1.9%, rgb(0, 0, 184, 0.5) 97.5%);
+  background: -webkit-linear-gradient(-90.13deg, rgb(149, 0, 171, 0.5) 1.9%, rgb(0, 0, 184, 0.5) 97.5%);
 }
 
 .orange-text-gradient {
@@ -124,6 +146,14 @@
   text-indent: -9999em;
   animation: mulShdSpin 1.1s infinite ease;
   transform: translateZ(0);
+}
+
+.navbar {
+  transition: all .5s ease-in-out;
+}
+
+.navbar-buttons {
+  transition: all .2s ease-in-out;
 }
 
 @keyframes mulShdSpin {

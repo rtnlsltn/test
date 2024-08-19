@@ -27,16 +27,35 @@ import {
 
 export const navLinks = [
   {
+    id: "services",
+    title: "Services",
+  },
+  {
     id: "about",
     title: "About",
   },
   {
-    id: "work",
-    title: "Work",
-  },
-  {
     id: "contact",
     title: "Contact",
+  },
+];
+
+const servicesList = [
+  {
+    title: "App Development",
+    icon: web,
+  },
+  {
+    title: "Web Development",
+    icon: mobile,
+  },
+  {
+    title: "Full Stack Development",
+    icon: backend,
+  },
+  {
+    title: "Search Engine Optimization",
+    icon: creator,
   },
 ];
 
@@ -262,4 +281,4 @@ const projects = [
   },
 ];
 
-export { services, technologies, experiences, testimonials, projects };
+export { services, servicesList, technologies, experiences, testimonials, projects };

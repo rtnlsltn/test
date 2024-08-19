@@ -1,23 +1,20 @@
 import { BrowserRouter } from "react-router-dom";
 
-import { About, Contact, Experience, Feedbacks, Hero, Navbar, Tech, Works, StarsCanvas } from "./components";
+import { About, Contact, Header, Experience, Feedbacks, GravityJarRow, Hero, Navbar, Tech, Works, Services, StarsCanvas, GravityJarCanvas } from "./components";
 
 const App = () => {
   return (
     <BrowserRouter>
       <div className='relative z-0 bg-primary'>
-        <div className='bg-hero-pattern bg-cover bg-no-repeat bg-center'>
+        <div>
           <Navbar />
-          <Hero />
-        </div>
-        <About />
-        <Experience />
-        <Tech />
-        <Works />
-        <Feedbacks />
-        <div className='relative z-0'>
-          <Contact />
+          <Header />
+          <Services />
           <StarsCanvas />
+        </div>
+        <div className='relative z-0 bg-primary'>
+          <About />
+          <Contact />
         </div>
       </div>
     </BrowserRouter>
@@ -25,3 +22,8 @@ const App = () => {
 }
 
 export default App;
+          // <Services />
+                  // <Contact />
+        // <Feedbacks />
+        // https://dashboard.emailjs.com/
+// https://github.com/adrianhajdin/project_3D_developer_portfolio
