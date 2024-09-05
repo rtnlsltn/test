@@ -1,22 +1,13 @@
 import { BrowserRouter } from "react-router-dom";
 
-import { About, Contact, Header, Experience, Feedbacks, GravityJarRow, Hero, Navbar, Tech, Projects, Services, StarsCanvas, GravityJarCanvas } from "./components";
+import { Projects, Services } from "./components";
 
 const App = () => {
   return (
     <BrowserRouter>
       <div className='relative z-0 bg-primary'>
-        <div className='relative z-0 bg-primary'>
-          <Navbar />
-          <Header />
           <Services />
-          <StarsCanvas />
         </div>
-        <div className='relative z-0 bg-primary'>
-          <About />
-          <Contact />
-        </div>
-      </div>
     </BrowserRouter>
   );
 }
