@@ -3,9 +3,9 @@ import { Canvas, useFrame, useThree, useLoader } from "@react-three/fiber"
 import { OrbitControls, Preload, Text, useGLTF,  useBounds, useEnvironment, Bounds, ContactShadows, Environment, MeshDistortMaterial, MeshRefractionMaterial, MeshTransmissionMaterial, Shadow, Caustics, useAspect} from "@react-three/drei";
 import CanvasLoader from "../Loader";
 import * as THREE from 'three'
-import fontBold from '../../../public/fonts/Changa-Bold.woff'
-import fontSemiBold from '../../../public/fonts/Changa-SemiBold.woff'
-import font from '../../../public/fonts/Changa-Regular.woff'
+import fontBold from '../../../src/fonts/Changa-Bold.woff'
+import fontSemiBold from '../../../src/fonts/Changa-SemiBold.woff'
+import font from '../../../src/fonts/Changa-Regular.woff'
 
 const Blob = () => {
   const blob = useGLTF("./blob/blob.glb");

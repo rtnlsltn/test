@@ -1,6 +1,6 @@
 import { BrowserRouter } from "react-router-dom";
 
-import { About, Contact, Header, Experience, Feedbacks, GravityJarRow, Hero, Navbar, Tech, Works, Services, StarsCanvas, GravityJarCanvas } from "./components";
+import { About, Contact, Header, Experience, Feedbacks, GravityJarRow, Hero, Navbar, Tech, Projects, Services, StarsCanvas, GravityJarCanvas } from "./components";
 
 const App = () => {
   return (

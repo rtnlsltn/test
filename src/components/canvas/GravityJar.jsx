@@ -61,8 +61,8 @@ const GravityJar = () => {
 
   return (
     <group ref={group}>
-      <BlackHole/>
-      <Jar />
+    <BlackHole/>
+    <Jar />
     </group>
   );
 };
