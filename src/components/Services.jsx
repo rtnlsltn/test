@@ -1,5 +1,4 @@
 import React, { Suspense, useRef, useEffect, useState } from "react";
-import Tilt from "react-tilt";
 import { AnimatePresence, motion } from "framer-motion";
 
 import { styles } from "../styles";
@@ -10,7 +9,7 @@ import { fadeIn, textVariant } from "../utils/motion";
 import { projects } from "../constants";
 
 const ServicesCard = ({ index, title, category, icon, onSelect }) => (
-  <Tilt className='xs:w-[250px] w-full'>
+  <div className='xs:w-[250px] w-full'>
     <motion.div
       variants={fadeIn("down", "", index * 0.5, 0.75)}
       className='w-full blue-purple-gradient-opaque p-[1px] rounded-[20px]'
@@ -30,7 +29,7 @@ const ServicesCard = ({ index, title, category, icon, onSelect }) => (
         </h3>
       </div>
     </motion.div>
-  </Tilt>
+  </div>
 );
 
 const ProjectCard = ({
@@ -43,12 +42,7 @@ const ProjectCard = ({
 }) => {
   return (
     <motion.div variants={fadeIn("up", "spring", index * 0.5, 0.75)}>
-      <Tilt
-        options={{
-          max: 45,
-          scale: 1,
-          speed: 450,
-        }}
+      <div
         className='bg-tertiary p-5 rounded-2xl sm:w-[360px] w-full'
       >
         <div className='mt-5'>
@@ -66,7 +60,7 @@ const ProjectCard = ({
             </p>
           ))}
         </div>
-      </Tilt>
+      </div>
     </motion.div>
   );
 };
